@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>स्टूडेंट हेल्पर | Student Helper</title>
+    <style>
+        /* बेसिक रीसेट और फ़ॉन्ट्स */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* हेडर और नेविगेशन */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* मेन कंटेनर */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* ग्रिड लेआउट */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* कार्ड स्टाइल */
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+
+        /* फॉर्म और लिस्ट स्टाइल */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1abc9c;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #16a085;
+        }
+
+        /* फुटर */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>स्टूडेंट हेल्पर (Student Helper)</h1>
+        <p>आपकी पढ़ाई को आसान और व्यवस्थित बनाने का वन-स्टॉप प्लेटफॉर्म।</p>
+    </header>
+
+    <nav>
+        <a href="#todo">टू-डू लिस्ट</a>
+        <a href="#timetable">टाइम टेबल</a>
+        <a href="#resources">स्टडी मटेरियल</a>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card" id="todo">
+                <h2>आज के मुख्य काम (To-Do List)</h2>
+                <ul>
+                    <li><input type="checkbox"> गणित का असाइनमेंट पूरा करना है</li>
+                    <li><input type="checkbox"> साइंस चैप्टर 4 का रिवीज़न</li>
+                    <li><input type="checkbox"> शाम 5 बजे कोडिंग क्लास</li>
+                </ul>
+                <button class="btn">+ नया टास्क जोड़ें</button>
+            </div>
+
+            <div class="card" id="timetable">
+                <h2>आज का टाइम टेबल</h2>
+                <ul>
+                    <li><strong>09:00 AM - 11:00 AM:</strong> कॉलेज/स्कूल क्लासेस</li>
+                    <li><strong>12:00 PM - 02:00 PM:</strong> सेल्फ स्टडी (मैथ्स)</li>
+                    <li><strong>04:00 PM - 06:00 PM:</strong> प्रोजेक्ट वर्क</li>
+                </ul>
+                <button class="btn">बदलाव करें</button>
+            </div>
+
+            <div class="card" id="resources">
+                <h2>ज़रूरी स्टडी लिंक्स और नोट्स</h2>
+                <p>यहाँ से आप अपने क्लास नोट्स और ई-बुक्स डाउनलोड कर सकते हैं।</p>
+                <ul>
+                    <li><a href="#" style="color: #1abc9c;">फिजिक्स नोट्स (PDF)</a></li>
+                    <li><a href="#" style="color: #1abc9c;">इतिहास के शार्ट नोट्स</a></li>
+                </ul>
+                <button class="btn">फ़ाइल अपलोड करें</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="height: 60px;"></div> <footer>
+        <p>&copy; 2026 स्टूडेंट हेल्पर | छात्रों के लिए, छात्रों द्वारा।</p>
+    </footer>
+
+</body>
+</html>
